@@ -1,0 +1,142 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Tuan GET OUT OF MINE BRO, HUST, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.28.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+E:\STUDY\2023_1\MangCamBienKhongDay\Code\Sensor_MCBKD\MDK-ARM\Sensor_MCBKD.uvprojx
+Project File Date:  01/21/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Sensor_MCBKD'
+assembling startup_stm32f103xb.s...
+compiling main.c...
+../Core/Src/main.c(107): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin (DS18B20_PORT, DS18B20_PIN, 0);  // pull the pin low
+../Core/Src/main.c(114): warning:  #68-D: integer conversion resulted in a change of sign
+  	else Response = -1;
+../Core/Src/main.c(133): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin (DS18B20_PORT, DS18B20_PIN, 0);  // pull the pin LOW
+../Core/Src/main.c(145): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin (DS18B20_PORT, DS18B20_PIN, 0);  // pull the pin LOW
+../Core/Src/main.c(162): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin (GPIOA, GPIO_PIN_1, 0);  // pull the data pin LOW
+../Core/Src/main.c(321): error:  #169: expected a declaration
+  }
+../Core/Src/main.c(350): warning:  #12-D: parsing restarts here after previous syntax error
+                                |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+../Core/Src/main.c(351): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+../Core/Src/main.c(351): error:  #65: expected a ";"
+    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+../Core/Src/main.c(352): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+../Core/Src/main.c(352): error:  #65: expected a ";"
+    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+../Core/Src/main.c(353): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
+../Core/Src/main.c(353): error:  #65: expected a ";"
+    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
+../Core/Src/main.c(354): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+../Core/Src/main.c(354): error:  #65: expected a ";"
+    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+../Core/Src/main.c(356): error:  #169: expected a declaration
+    if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+../Core/Src/main.c(423): warning:  #12-D: parsing restarts here after previous syntax error
+    hspi1.Init.CRCPolynomial = 10;
+../Core/Src/main.c(424): error:  #169: expected a declaration
+    if (HAL_SPI_Init(&hspi1) != HAL_OK)
+../Core/Src/main.c(461): warning:  #12-D: parsing restarts here after previous syntax error
+      Error_Handler();
+../Core/Src/main.c(462): error:  #169: expected a declaration
+    }
+../Core/Src/main.c(464): error:  #169: expected a declaration
+    if (HAL_TIM_ConfigClockSource(&htim1, &sClockSourceConfig) != HAL_OK)
+../Core/Src/main.c(468): warning:  #12-D: parsing restarts here after previous syntax error
+    sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+../Core/Src/main.c(469): error:  #77-D: this declaration has no storage class or type specifier
+    sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+../Core/Src/main.c(469): error:  #65: expected a ";"
+    sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+../Core/Src/main.c(470): error:  #169: expected a declaration
+    if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK)
+../Core/Src/main.c(540): warning:  #12-D: parsing restarts here after previous syntax error
+    GPIO_InitStruct.Pin = GPIO_PIN_13;
+../Core/Src/main.c(541): error:  #77-D: this declaration has no storage class or type specifier
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+../Core/Src/main.c(541): error:  #65: expected a ";"
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+../Core/Src/main.c(542): error:  #77-D: this declaration has no storage class or type specifier
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+../Core/Src/main.c(542): error:  #65: expected a ";"
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+../Core/Src/main.c(543): error:  #77-D: this declaration has no storage class or type specifier
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+../Core/Src/main.c(543): error:  #65: expected a ";"
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+../Core/Src/main.c(544): error:  #79: expected a type specifier
+    HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+../Core/Src/main.c(544): error:  #79: expected a type specifier
+    HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+../Core/Src/main.c(544): error:  #260-D: explicit type is missing ("int" assumed)
+    HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+../Core/Src/main.c(544): error:  #147: declaration is incompatible with "void HAL_GPIO_Init(GPIO_TypeDef *, GPIO_InitTypeDef *)"  (declared at line 223 of "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h")
+    HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+../Core/Src/main.c(547): error:  #77-D: this declaration has no storage class or type specifier
+    GPIO_InitStruct.Pin = GPIO_PIN_1|NRF_CE_Pin|SPI_CS_Pin|led1_Pin;
+../Core/Src/main.c(547): error:  #65: expected a ";"
+    GPIO_InitStruct.Pin = GPIO_PIN_1|NRF_CE_Pin|SPI_CS_Pin|led1_Pin;
+../Core/Src/main.c(548): error:  #77-D: this declaration has no storage class or type specifier
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+../Core/Src/main.c(548): error:  #65: expected a ";"
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+../Core/Src/main.c: 10 warnings, 30 errors
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_msp.c...
+"Sensor_MCBKD\Sensor_MCBKD.axf" - 30 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.5.1.pack
+                ARM.CMSIS.5.5.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.2.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Sensor_MCBKD
+  C:\Users\FPT\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  C:\Users\FPT\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.2.0
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
